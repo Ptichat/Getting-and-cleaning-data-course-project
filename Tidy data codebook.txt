@@ -1,0 +1,58 @@
+The set of variables that appairs in the final tidy dataframe are:
+
+For each subject, there are the following variables:
+
+subject: Identifies the subject who performed the activity. Its range is from 1 to 30.
+activity: The activity that was performed by the subject.
+set: Identifies if the subject was part of the test or the training set.
+
+
+('-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.)
+
+Time Body Accelerometer  Mean ()-XYZ: The average of the accelerometer 3-axial body acceleration signals mean, when the signals captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+Time Body Accelerometer  Standard Deviation ()-XYZ: The average of the accelerometer 3-axial body acceleration signals standard deviation, when the signals captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+Frequency Body Accelerometer  Mean ()-XYZ: The average of the accelerometer 3-axial body acceleration signals frequency mean, calculated by application of a Fast Fourier Transform (FFT) to Time Body Accelerometer  Mean ()-XYZ.
+Frequency Body Accelerometer  Standard Deviation ()-XYZ: The average of the accelerometer 3-axial body acceleration signals frequency standard deviation, calculated by application of a Fast Fourier Transform (FFT) to Time Body Accelerometer  Standard Deviation ()-XYZ.
+
+Time Body Accelerometer  Magnitude  Mean (): The average of the Time Body Accelerometer  Mean ()-XYZ magnitude, calculated using the Euclidean norm.
+Time Body Accelerometer  Magnitude  Standard Deviation (): The average of the Time Body Accelerometer  Standard Deviation ()-XYZ magnitude, calculated using the Euclidean norm.
+Frequency Body Accelerometer  Magnitude  Mean (): The average of the Time Body Accelerometer  Magnitude  Mean () frequency mean, calculated by application of a Fast Fourier Transform (FFT).
+Frequency Body Accelerometer  Magnitude  Standard Deviation (): The average of the Time Body Accelerometer  Magnitude  Standard Deviation () frequency mean, calculated by application of a Fast Fourier Transform (FFT).
+
+Time Body Accelerometer Jerk Mean ()-XYZ: The average of the Time Body Accelerometer  Mean ()-XYZ, derived in time to obtain Jerk signals.
+Time Body Accelerometer Jerk Standard Deviation ()-XYZ: The average of the Time Body Accelerometer  Standard Deviation ()-XYZ, derived in time to obtain Jerk signals.
+Frequency Body Accelerometer Jerk Mean ()-XYZ: The average of the Time Body Accelerometer Jerk Mean ()-XYZ frequency mean, calculated by application of a Fast Fourier Transform (FFT).
+Frequency Body Accelerometer Jerk Standard Deviation ()-XYZ: The average of the Time Body Accelerometer Jerk Standard Deviation ()-XYZ frequency mean, calculated by application of a Fast Fourier Transform (FFT).
+
+Time Body Accelerometer Jerk Magnitude  Mean (): The average of the Time Body Accelerometer Jerk Mean ()-XYZ magnitude, calculated using the Euclidean norm.
+Time Body Accelerometer Jerk Magnitude  Standard Deviation (): The average of the Time Body Accelerometer Jerk Standard Deviation ()-XYZ magnitude, calculated using the Euclidean norm.
+Frequency  Body  Accelerometer Jerk Magnitude  Mean (): The average of the Time Body Accelerometer Jerk Magnitude  Mean () frequency mean, calculated by application of a Fast Fourier Transform (FFT).
+Frequency  Body  Accelerometer Jerk Magnitude  Standard Deviation (): The average of the Time Body Accelerometer Jerk Magnitude  Standard Deviation () frequency mean, calculated by application of a Fast Fourier Transform (FFT).
+
+
+
+Time Gravity Accelerometer  Mean ()-XYZ: The average of the accelerometer 3-axial gravity acceleration signals mean, when the signals captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+Time Gravity Accelerometer  Standard Deviation ()-XYZ: The average of the accelerometer 3-axial gravity acceleration signals standard deviation, when the signals captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+
+Time Gravity Accelerometer  Magnitude  Mean (): The average of the Time Gravity Accelerometer  Mean ()-XYZ magnitude, calculated using the Euclidean norm.
+Time Gravity Accelerometer  Magnitude  Standard Deviation (): The average of the Time Gravity Accelerometer  Standard Deviation ()-XYZ magnitude, calculated using the Euclidean norm.
+
+
+
+Time Body Gyroscope  Mean ()-XYZ: The average of the gyroscope 3-axial body acceleration signals mean, when the signals captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+Time Body Gyroscope  Standard Deviation ()-XYZ: The average of the gyroscope 3-axial body acceleration signals standard deviation, when the signals captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+Frequency Body Gyroscope  Mean ()-XYZ: The average of the gyroscope 3-axial body acceleration signals frequency mean, calculated by application of a Fast Fourier Transform (FFT) to Time Body Gyroscope  Mean ()-XYZ.
+Frequency Body Gyroscope  Standard Deviation ()-XYZ: The average of the gyroscope 3-axial body acceleration signals frequency standard deviayion, calculated by application of a Fast Fourier Transform (FFT) to Time Body Gyroscope  Standard Deviation ()-XYZ.
+
+Time Body Gyroscope  Magnitude  Mean (): The average of the Time Body Gyroscope  Mean ()-XYZ magnitude, calculated using the Euclidean norm.
+Time Body Gyroscope  Magnitude  Standard Deviation (): The average of the Time Body Gyroscope  Standard Deviation ()-XYZ magnitude, calculated using the Euclidean norm.
+Frequency  Body  Gyroscope  Magnitude  Mean (): The average of the Time Body Gyroscope  Magnitude  Mean () frequency mean, calculated by application of a Fast Fourier Transform (FFT).
+Frequency  Body  Gyroscope  Magnitude  Standard Deviation (): The average of the Time Body Gyroscope  Magnitude  Standard Deviation () frequency mean, calculated by application of a Fast Fourier Transform (FFT).
+
+Time Body Gyroscope Jerk Mean ()-XYZ: The average of the Time Body Gyroscope  Mean ()-XYZ, derived in time to obtain Jerk signals. ('-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.)
+Time Body Gyroscope Jerk Standard Deviation ()-XYZ: The average of the Time Body Gyroscope  Standard Deviation ()-XYZ, derived in time to obtain Jerk signals. ('-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.)
+
+Time Body Gyroscope Jerk Magnitude  Mean (): The average of the Time Body Gyroscope Jerk Mean ()-XYZ magnitude, calculated using the Euclidean norm.
+Time Body Gyroscope Jerk Magnitude  Standard Deviation (): The average of the Time Body Gyroscope Jerk Standard Deviation ()-XYZ magnitude, calculated using the Euclidean norm.
+Frequency  Body  Gyroscope Jerk Magnitude  Mean (): The average of the Time Body Gyroscope Jerk Magnitude  Mean () frequency mean, calculated by application of a Fast Fourier Transform (FFT).
+Frequency  Body  Gyroscope Jerk Magnitude  Standard Deviation (): The average of the Time Body Gyroscope Jerk Magnitude  Standard Deviation () frequency mean, calculated by application of a Fast Fourier Transform (FFT).
