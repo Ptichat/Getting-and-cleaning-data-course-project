@@ -13,14 +13,22 @@ colnames(training_set) <- features$V2
 
 # Uses descriptive activity names to name the activities in the data set
 
+test_labels$id  <- 1:nrow(test_labels)
 test_activity <- merge(test_labels, activity_labels, by="V1", sort = FALSE, all.x = TRUE)
-colnames(test_activity) <- c("activity label","activity")
+colnames(test_activity) <- c("activity label", "id", "activity")
+test_activity <- test_activity[order(test_activity$id),]
+
+training_labels$id  <- 1:nrow(training_labels)
 training_activity = merge(training_labels, activity_labels, by="V1", sort = FALSE, all.x = TRUE)
-colnames(training_activity) <- c("activity label","activity")
+colnames(training_activity) <- c("activity label", "id", "activity")
+training_activity <- training_activity[order(training_activity$id),]
+
 colnames(subject_test) <- "subject"
 colnames(subject_training) <- "subject"
+
 test_set <- bind_cols(set = "test", test_set)
 training_set <- bind_cols(set = "training", training_set)
+
 test <- bind_cols(subject_test, test_activity, test_set)
 training <- bind_cols(subject_training, training_activity, training_set)
 
@@ -29,6 +37,7 @@ training <- bind_cols(subject_training, training_activity, training_set)
 data <- bind_rows(test, training)
 data$V1 = NULL
 data$`activity label` = NULL
+data$id = NULL
 
 # Extracts only the measurements on the mean and standard deviation for each measurement.
 
@@ -51,7 +60,8 @@ names(selected_data)<-gsub("gravity", " Gravity ", names(selected_data))
 
 # From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
-selected_data$subject <- as.factor(selected_data$subject)
+# selected_data$subject <- as.factor(selected_data$subject)
+# selected_data$activity <- as.factor(selected_data$activity)
 tidy_data <- aggregate(. ~subject + activity + set, selected_data, mean)
 tidy_data <- tidy_data[order(tidy_data$subject,tidy_data$activity),]
 write.table(tidy_data, file = "Tidy.txt", row.names = FALSE)
